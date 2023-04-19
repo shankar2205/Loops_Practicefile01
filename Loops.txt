@@ -1,0 +1,102 @@
+Checking the Execution Status of Command  - echo
+if echo "Hello World"; then
+>    echo "Command Ececuted Successfully"
+> else
+>    echo "Command Failed"
+> fi
+Hello World
+Command Ececuted Successfully
+
+Checking the Execution Status of Command  - cat
+ if cat test1.txt; then
+>    echo "Command Executed Successfully"
+> else
+>    echo "Command Failed"
+> fi
+1. cd - Change deirectory, Syntax : $cd [options] [DIrectory]
+   Tags  -  cd .
+         -  cd . .
+2. ls  - To display a directory's Files and Folders
+   Syntax  -  $ls [options].. [files]..
+   Tags  -  ls -1
+3. cat - To read the contents of the one or more files and display
+   Syntax - $cat [options]..[filename(s)]..
+   Tags  -  cat -n
+4. touch - To Create a new file without any content inside it
+   Syntax  - $touch [option]..[filename]..
+5. mkdir - To Create new directories inside an existing working directory
+   Syntax - $mkdir [option]..<directory Name>
+   Tags - mkdir --help
+6. pwd  - To print current working directory
+   $pwd [options]
+
+
+Command Executed Successfully
+
+Check if File Exists or not. If it's not present print "No Such File Found".
+ if find . -name *.csv; then
+>    echo "File is Already exists"
+> else
+>    echo "No Such File Found"
+> fi
+./test5.csv
+File is Already exists
+
+
+91728@ShankaR MINGW64 /D/Practice_Files_Linux (main)
+$ for i in 1 2 3 4 5; do     echo "Welcome $i times"; done
+Welcome 1 times
+Welcome 2 times
+Welcome 3 times
+Welcome 4 times
+Welcome 5 times
+
+91728@ShankaR MINGW64 /D/Practice_Files_Linux (main)
+$ for i in {1..5}
+> do
+>     echo "Welcome $i times"
+> done
+Welcome 1 times
+Welcome 2 times
+Welcome 3 times
+Welcome 4 times
+Welcome 5 times
+
+91728@ShankaR MINGW64 /D/Practice_Files_Linux (main)
+$ echo "Bash Version ${BASH_VERSION}..."
+Bash Version 5.2.15(1)-release...
+
+91728@ShankaR MINGW64 /D/Practice_Files_Linux (main)
+$ for i in {0..10..2}
+> do
+>     echo "welcome $i times"
+> done
+welcome 0 times
+welcome 2 times
+welcome 4 times
+welcome 6 times
+welcome 8 times
+welcome 10 times
+
+91728@ShankaR MINGW64 /D/Practice_Files_Linux (main)
+$ for i in {0..10..3}; do     echo "welcome $i times"; done
+welcome 0 times
+welcome 3 times
+welcome 6 times
+welcome 9 times
+
+
+$ for i in $(seq 1 2 20)
+> do
+>     echo "welcome $i times"
+> done
+welcome 1 times
+welcome 3 times
+welcome 5 times
+welcome 7 times
+welcome 9 times
+welcome 11 times
+welcome 13 times
+welcome 15 times
+welcome 17 times
+welcome 19 times
